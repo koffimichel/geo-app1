@@ -11,7 +11,7 @@ pipeline{
         }
         stage('upload artifact'){
             steps{
-            sh'curl -uadmin:APHKcPC3a5vmZR9FV9hqX6v1qo -T target/bio*.jar "http://ec2-54-172-176-141.compute-1.amazonaws.co:8081/artifactory/geolocation/geo/bio_${BUID_ID}.jar"'
+            sh'curl -uadmin:APHKcPC3a5vmZR9FV9hqX6v1qo -T target/bio*.jar "http://ec2-54-172-176-141.compute-1.amazonaws.com:8081/artifactory/geolocation/geo/bio_${BUID_ID}.jar"'
             }
         }
     }
